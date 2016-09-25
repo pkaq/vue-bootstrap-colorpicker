@@ -2,6 +2,7 @@
 
 > 基于bootstrap3.x的vue颜色拾取器(vue-colorpicker base on bootstrap)
 
+![capture](./capture/gif.gif)
 
 此组件强烈依赖于jquery以及bootstrap3,使用时务必引入方可正常.
 ```html
