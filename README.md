@@ -11,7 +11,7 @@ npm install vue-bootstrap-colorpicker
 ```
 ## 使用
 ```javascript
-import ColorPicker from './components/ColorPicker.vue'
+import ColorPicker from 'vue-bootstrap-colorpicker'
 ...
 ...
 
