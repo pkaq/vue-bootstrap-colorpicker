@@ -3,6 +3,13 @@
 > 基于bootstrap3.x的vue颜色拾取器(vue-colorpicker base on bootstrap)
 
 
+此组件强烈依赖于jquery以及bootstrap3,使用时务必引入方可正常.
+```html
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <script src="static/js/jQuery/jQuery-2.2.0.min.js"></script>
+  <script src="static/js/bootstrap/bootstrap.min.js"></script>
+```
+
 ## 安装
 
 ``` bash
