@@ -1,19 +1,18 @@
 <template>
-  <!-- 顏色拾取器 -->
   <div class="btn-group colorpicker">
-    <a class="label dropdown-toggle" :style={'background-color':color} type="button" data-toggle="dropdown">
+    <a class="label dropdown-toggle" :style="'background-color:' + color" type="button" data-toggle="dropdown">
       <slot>{{ content }}</slot>
     </a>
 
     <ul class="dropdown-menu" role="menu">
       <li v-for="colo in colors">
-        <a class="label text-left" :style={'background-color':colo} @click="colorpick(colo)">
+        <a class="label text-left" :style="'background-color:' + colo"  @click="colorpick(colo)">
           <i v-if="colo === color" class="glyphicon glyphicon-ok"></i>
+          <i v-else></i>
         </a>
       </li>
     </ul>
   </div>
-  <!-- //END 顏色拾取器 -->
 </template>
 <script>
   export default {

@@ -17,6 +17,8 @@ module.exports = {
     fallback: [path.join(__dirname, '../node_modules')],
     alias: {
       'src': path.resolve(__dirname, '../src'),
+      // 由于2.0的package.json中main入口指向了vue.common.js 这里需要设置一下别名
+      'vue': 'vue/dist/vue.js',
       'assets': path.resolve(__dirname, '../src/assets'),
       'components': path.resolve(__dirname, '../src/components')
     }

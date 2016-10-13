@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <img class="logo" src="./assets/logo.png">
-    </br>
-    <color-picker :color.sync="color" >
+    <br></br>
+    <color-picker :color="color" >
         嘿嘿嘿
     </color-picker>
   </div>

@@ -1,4 +1,4 @@
-# vue-bootstrap-colorpicker
+# vue-bootstrap-colorpicker-2.0
 
 > 基于bootstrap3.x的vue颜色拾取器(vue-colorpicker base on bootstrap)
 
