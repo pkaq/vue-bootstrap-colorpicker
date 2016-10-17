@@ -2,7 +2,7 @@
   <div id="app">
     <img class="logo" src="./assets/logo.png">
     <br></br>
-    <color-picker :color="color" >
+    <color-picker :color="color" v-on:picked  ="changeColor">
         嘿嘿嘿
     </color-picker>
   </div>
@@ -15,6 +15,11 @@ export default {
   data: function () {
     return {
       color: '#309BAC'
+    }
+  },
+  methods: {
+    changeColor: function (color) {
+      this.color = color
     }
   },
   components: {

@@ -6,7 +6,7 @@
 
     <ul class="dropdown-menu" role="menu">
       <li v-for="colo in colors">
-        <a class="label text-left" :style="'background-color:' + colo"  @click="colorpick(colo)">
+        <a class="label text-left" :style="'background-color:' + colo"  @click="picked(colo)">
           <i v-if="colo === color" class="glyphicon glyphicon-ok"></i>
           <i v-else></i>
         </a>
@@ -32,8 +32,8 @@
       }
     },
     methods: {
-      colorpick: function (color) {
-        this.color = color
+      picked: function (color) {
+        this.$emit('picked', color)
       }
     }
   }
