@@ -25,14 +25,19 @@ import ColorPicker from 'vue-bootstrap-colorpicker'
 
  components: {
     ColorPicker
-  }
+  },
+ methods: {
+    changeColor: function (color) {
+      this.color = color
+    }
+ }
 ...
 ...
   
 ```
 
 ```html
-  <color-picker :color.sync="color">嘿嘿嘿</color-picker>
+    <color-picker :color="color" v-on:picked  ="changeColor">嘿嘿嘿</color-picker>
 ```
 
 ## 参数说明
