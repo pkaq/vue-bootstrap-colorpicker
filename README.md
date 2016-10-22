@@ -37,14 +37,13 @@ import ColorPicker from 'vue-bootstrap-colorpicker'
 ```
 
 ```html
-    <color-picker :color="color" v-on:picked  ="changeColor">嘿嘿嘿</color-picker>
+    <color-picker v-model="color" >嘿嘿嘿</color-picker>
 ```
 
 ## 参数说明
 | 参数 | 说明 | 默认值     |
 |--------|--------|--------|
-|    content |   标签显示的内容     |  ~PKAQ~     | 
-|    color   |   当前颜色           |     无      |    
+|    v-model   |   当前颜色           |     无      |    
 |    colors  |   颜色列表           |     ['#FFAC0C', '#309BAC', '#247B79', '#8AA766', '#F6C048', '#B52F85', '#707070', '#9386BD', '#D74063', '#F4889F', '#8B7366'] |    
 
 

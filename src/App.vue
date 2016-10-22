@@ -4,7 +4,7 @@
     <br></br>
     <ul>
       <li  v-for="tag in tags">
-        <color-picker v-model="tag.color" v-on:picked  ="changeColor">
+        <color-picker v-model="tag.color">
             嘿嘿嘿
         </color-picker>
         <hr>
@@ -24,11 +24,6 @@ export default {
         {color: '#FFEE00', name: '1'},
         {color: '#DDEE00', name: '1'}
       ]
-    }
-  },
-  methods: {
-    changeColor: function (color) {
-      console.info(this)
     }
   },
   components: {
