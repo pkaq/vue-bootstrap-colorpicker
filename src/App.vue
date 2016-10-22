@@ -2,24 +2,33 @@
   <div id="app">
     <img class="logo" src="./assets/logo.png">
     <br></br>
-    <color-picker :color="color" v-on:picked  ="changeColor">
-        嘿嘿嘿
-    </color-picker>
+    <ul>
+      <li  v-for="tag in tags">
+        <color-picker v-model="tag.color" v-on:picked  ="changeColor">
+            嘿嘿嘿
+        </color-picker>
+        <hr>
+      </li>
+      </ul>
   </div>
 </template>
 
 <script>
 import ColorPicker from './components/ColorPicker.vue'
-
 export default {
   data: function () {
     return {
-      color: '#309BAC'
+      tags: [
+        {color: '#FF0000', name: '1'},
+        {color: '#FFCC00', name: '1'},
+        {color: '#FFEE00', name: '1'},
+        {color: '#DDEE00', name: '1'}
+      ]
     }
   },
   methods: {
     changeColor: function (color) {
-      this.color = color
+      console.info(this)
     }
   },
   components: {
